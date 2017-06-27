@@ -7,7 +7,7 @@
 
 			<div class="logo">
 				<center>
-                    <img src="../resources/img/logo.png" alt="">
+                    <img src="./resources/img/logo.png" alt="">
 				</center>
 			</div>
 
@@ -23,19 +23,43 @@
                 	<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="material-icons">face</i>
-									<span class="notification">Usuarios</span>
+									<span class="notification">Administrador</span>
 									<p class="hidden-lg hidden-md">usuarios</p>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Nuevo Recidente</a></li>
-									<li><a href="#">Ver Recidentes</a></li>
+									<li><a href="#">Nuevo Residente</a></li>
+									<li><a href="#">Ver Residentes</a></li>
+									
+								</ul>
+                    </li>
+                    <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">account_circle</i>
+									<span class="notification">Registrar Usuarios</span>
+									<p class="hidden-lg hidden-md">usuarios</p>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Nuevo Residente</a></li>
+									<li><a href="#">Ver Residentes</a></li>
+									
+								</ul>
+                    </li>
+                    <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">motorcycle</i>
+									<span class="notification">Registrar Vehiculos</span>
+									<p class="hidden-lg hidden-md">usuarios</p>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Nuevo Residente</a></li>
+									<li><a href="#">Ver Residentes</a></li>
 									
 								</ul>
                     </li>
 	                 	<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="material-icons">directions_car</i>
-									<span class="notification">vehiculos</span>
+									<span class="notification">Verificar Parquederos</span>
 									<p class="hidden-lg hidden-md">Notifications</p>
 								</a>
 								<ul class="dropdown-menu">
@@ -47,7 +71,7 @@
                         	<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="material-icons">local_movies</i>
-									<span class="notification">Parquederos</span>
+									<span class="notification">Parquederos disponibles</span>
 									<p class="hidden-lg hidden-md">parqueaderos</p>
 								</a>
 								<ul class="dropdown-menu">
@@ -59,13 +83,13 @@
                               	<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="material-icons">attach_money</i>
-									<span class="notification">pagos</span>
+									<span class="notification">Verificar Pagos</span>
 									<p class="hidden-lg hidden-md">pagos</p>
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="#">Consultar Soportes de pago</a></li>
 									
-									<li><a href="#">estado pago</a></li>
+									<li><a href="#">Estado Pago</a></li>
 									<li><a href="#">agregar sopore pago pago</a></li>
 								</ul>
                     </li>
@@ -75,13 +99,27 @@
 									<span class="notification">Reportes</span>
 									<p class="hidden-lg hidden-md">parqueaderos</p>
 								</a>
-								<ul class="dropdown-menu">
+								<!-- <ul class="dropdown-menu">
 									<li><a href="#">Generar reporte por mora</a></li>
 									<li><a href="#">Generar reporte por parqueadero</a></li>
 									<li><a href="#">Ver reportes</a></li>
 									
 									
-								</ul>
+								</ul> -->
+                    </li>
+                    	<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">report_problem</i>
+									<span class="notification">Apartamentos en mora</span>
+									<p class="hidden-lg hidden-md">parqueaderos</p>
+								</a>
+								<!-- <ul class="dropdown-menu">
+									<li><a href="#">Generar reporte por mora</a></li>
+									<li><a href="#">Generar reporte por parqueadero</a></li>
+									<li><a href="#">Ver reportes</a></li>
+									
+									
+								</ul> -->
                     </li>
 
 	             
