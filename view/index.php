@@ -21,7 +21,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Altavista</a>
+						<a class="navbar-brand" style="font-family: AmaticSC-Regular; color: #0D7F00;" href="#">ALTA VISTA</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -31,20 +31,7 @@
 									<p class="hidden-lg hidden-md">Dashboard</p>
 								</a>
 							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">notifications</i>
-									<span class="notification">5</span>
-									<p class="hidden-lg hidden-md">Notifications</p>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Mike John responded to your email</a></li>
-									<li><a href="#">You have 5 new tasks</a></li>
-									<li><a href="#">You're now friend with Andrew</a></li>
-									<li><a href="#">Another Notification</a></li>
-									<li><a href="#">Another One</a></li>
-								</ul>
-							</li>
+							
 							<li>
 								<a href="#pablo" role="button" data-toggle="modal" data-target="#login-modal">
 	 							   <i class="material-icons">person</i>
@@ -60,17 +47,18 @@
 				
 			</nav>
 
-<div style=" background-color: rgba(200,200,200,0.5);">
+<div style=" background-color: rgba(200,200,200,0.8);">
 <h1 style=" 
     margin-top: 300px;
     margin-left: 600px;
-    color: purple;
-   " > <i> Altavista   </i></h1>
+    color: #0D7F00;
+    
+   " > <i style="font-family: AmaticSC-Regular;"> ALTA VISTA   </i></h1>
 	<center><h2 style=" 
-    color: white;">Conjunto Recidencial, un hogar una familia, paz y tranquilidad
+    color: white; font-family: Cinzel-Regular;">Conjunto Residencial; un hogar, una familia, paz y tranquilidad
 	
 	</h2>
-	<i style="color:white;">Altavista</i>
+	<i style="color:white; font-family: AmaticSC-Regular; color: #0D7F00">Alta Vista Conjunto Residencial &copy;</i>
 	</center>
 </div>
 			
@@ -100,22 +88,22 @@
 		                <div class="modal-body">
 				    		<div id="div-login-msg">
                                 <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-login-msg">Type your username and password.</span>
+                                <span id="text-login-msg">Digite su correo electronico y contraseña</span>
                             </div>
-				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+				    		<input id="login_username" class="form-control" type="text" placeholder="altavista@altavista.com" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox"> Recordar mi cuenta
                                 </label>
                             </div>
         		    	</div>
 				        <div class="modal-footer">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                <button type="submit" style="float: left; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">Ingresar</button>
 				    	    <div>
-                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                <button id="login_register_btn" type="button" style="float: left; margin-left: 110px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">Registrarse</button>
+                                <button id="login_lost_btn" type="button" style="  margin-left: 60px; top: 5px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block" >¿Olvido su contraseña?</button>
                             </div>    
                             </div>
 				        </div>
@@ -127,17 +115,17 @@
     	    		    <div class="modal-body">
 		    				<div id="div-lost-msg">
                                 <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-lost-msg">Type your e-mail.</span>
+                                <span id="text-lost-msg">Ingrese su correo </span>
                             </div>
-		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="altavista@altavista.com" required>
             			</div>
 		    		    <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                <button type="submit" style="float: left; border-radius: 10px; background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">Recuperar</button>
                             </div>
                             <div>
-                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                <button id="lost_register_btn" type="button" style="left: 100px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">Registrarse</button>
+                                <button id="lost_login_btn" type="button" style="float: left;  margin-left: 65px; top: 5px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">¿Ya tienes contraseña?</button>
                             </div>
 		    		    </div>
                     </form>
@@ -148,19 +136,19 @@
             		    <div class="modal-body">
 		    				<div id="div-register-msg">
                                 <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-register-msg">Register an account.</span>
+                                <span id="text-register-msg">Formulario de registro.</span>
                             </div>
-		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Alta Vista" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="altavista@altavista.com" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Contraseña" required>
             			</div>
 		    		    <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                <button type="submit" style="float: left; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">Registrarme</button>
                             </div>
                             <div>
-                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="register_login_btn" type="button"  style="float: left; margin-left: 40px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">¿Ya tienes cuenta?</button>
+                                <button id="register_lost_btn" type="button" style="  margin-left: 60px; top: 5px; border-radius: 10px;  background-color: #0D7F00;" class="btn btn-primary btn-lg btn-block">¿Olvido su contraseña?</button>
                             </div>
 		    		    </div>
                     </form>

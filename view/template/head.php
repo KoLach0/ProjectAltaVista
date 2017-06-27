@@ -10,7 +10,11 @@
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="resources/frameworks/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="resources/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+ 
+
+    <!-- Fonts core CSS     -->
+    <link href="resources/frameworks/bootstrap/css/fonts.css" rel="stylesheet" />
 
     <!--  Material Dashboard CSS    -->
     <link href="resources/css/material-dashboard.css" rel="stylesheet"/>

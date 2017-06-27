@@ -1,6 +1,6 @@
 	<!--   Core JS Files   -->
     <script src="resources/js/jquery-3.1.0.min.js" type="text/javascript"></script>
-    <script src="resources/frameworks/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="resources/frameworks/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="resources/js/material.min.js" type="text/javascript"></script>
 
 	<!--  Charts Plugin -->
