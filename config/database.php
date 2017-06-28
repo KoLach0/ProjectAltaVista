@@ -1,10 +1,11 @@
 <?php
-return array(
-    "driver"    =>"mysql",
-    "host"      =>"localhost",
-    "user"      =>"root",
-    "pass"      =>"",
-    "database"  =>"altavistadb",
-    "charset"   =>"utf8"
-);
+class Database
+{
+    public static function StartUp()
+    {
+        $pdo = new PDO('mysql:host=localhost;dbname=altavista;charset=utf8', 'root', '');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
+        return $pdo;
+    }
+}
 ?>
