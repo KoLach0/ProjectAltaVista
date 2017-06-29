@@ -3,8 +3,10 @@
 
     <head>
         <?php 
+        include_once ("../../../model/Usuario.php");
         include_once ("../../../config/context.php");
         include(FOLDER_VIEW ."/template/head.php");
+        $user = new Usuario;
         ?>
     </head>
 
@@ -37,13 +39,15 @@
 
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($this->model->Listar() as $r): ?>
+                                                <?php $pdo = new PDO('mysql:host=localhost;dbname=altavista;charset=utf8', 'root', '');
+                                                foreach ($pdo->query("SELECT * FROM usuarios") as $r): ?>
                                                     <tr>
-                                                        <td><?php echo $r->cedula; ?></td>
-                                                        <td><?php echo $r->nombre; ?></td>
-                                                        <td><?php echo $r->apellido; ?></td>
-                                                        <td><?php echo $r->correo; ?></td>
-                                                        <td><?php echo $r->estado; ?></td>
+                                                        <td><?php echo $r[0]; ?></td>
+                                                        <td><?php #echo $r->nombre; ?></td>
+                                                        <td><?php #echo $r->apellido; ?></td>
+                                                        <td><?php #echo $r->correo; ?></td>
+                                                        <td><?php #echo $r->estado; ?></td>
+                                                        <td><?php #echo $r->contrasena; ?></td>
 
 
                                                     </tr>
@@ -57,13 +61,13 @@
                     </div>
                 </div>
                 
-                <?php include($context."/footer.php"); ?>
+                <?php include(FOLDER_VIEW."/template/footer.php"); ?>
 
             </div>
         </div>
 
     </body>
 
-    <?php include($context."/scripts.php"); ?>
+    <?php include(FOLDER_VIEW."/template/scripts.php"); ?>
 
 </html>
