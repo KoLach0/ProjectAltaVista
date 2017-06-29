@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <?php include("./template/head.php"); ?>
-</head>
+    <head>
+        <?php include_once ("../config/context.php");
+        include(FOLDER_VIEW . "/template/head.php");
+        ?>
+    </head>
 
-<body>
+    <body>
 
-    <div class="wrapper">
-        <?php include("./template/sidebar.php"); ?>
+        <div class="wrapper">
+<?php include(FOLDER_VIEW . "/template/sidebarsecretaria.php"); ?>?>
 
-        <div class="main-panel">
+            <div class="main-panel">
 
-            <?php include("./template/navbar.php"); ?>
-            <?php include("./template/contents/tableadministrador.php"); ?> 
-            <?php include("./template/footer.php"); ?>
+                <?php include(FOLDER_VIEW . "/template/navbar.php"); ?>
+                <?php include(FOLDER_VIEW . "/template/contents/tableadministrador.php"); ?> 
+<?php include(FOLDER_VIEW . "/template/footer.php"); ?>
 
+            </div>
         </div>
-    </div>
 
-</body>
+    </body>
 
-<?php include("./template/scripts.php"); ?>
+<?php include(FOLDER_VIEW . "/template/scripts.php"); ?>
 
 </html>

@@ -2,17 +2,20 @@
 <html lang="en">
 
     <head>
-        <?php include("../../head.php"); ?>
+        <?php 
+        include_once ("../../../config/context.php");
+        include(FOLDER_VIEW ."/template/head.php");
+        ?>
     </head>
 
     <body>
 
         <div class="wrapper">
-            <?php include("../../sidebarsecretaria.php"); ?>
+            <?php include(FOLDER_VIEW . "/template/sidebarsecretaria.php"); ?>
 
             <div class="main-panel">
 
-                <?php include("../../navbar.php"); ?>
+                <?php include(FOLDER_VIEW."/template/navbar.php"); ?>
                 
                 <div class="content">
                     <div class="container-fluid">
@@ -54,13 +57,13 @@
                     </div>
                 </div>
                 
-                <?php include("/footer.php"); ?>
+                <?php include($context."/footer.php"); ?>
 
             </div>
         </div>
 
     </body>
 
-    <?php include("../../scripts.php"); ?>
+    <?php include($context."/scripts.php"); ?>
 
 </html>

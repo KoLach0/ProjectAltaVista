@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="purple" data-image="resources/img/sidebar-1.jpg">
+<div class="sidebar" data-color="purple" data-image="<?php echo RESOURCES;?>/img/sidebar-1.jpg">
     <!--
     Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -7,7 +7,7 @@
 
     <div class="logo">
         <center>
-            <img src="./resources/img/logo.png" alt="">
+            <img src="<?php echo RESOURCES;?>/img/logo.png" alt="">
         </center>
     </div>
 
