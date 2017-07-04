@@ -2,11 +2,10 @@
 <html lang="en">
 
     <head>
-        <?php 
-        include_once ("../../../model/Usuario.php");
+        <?php
         include_once ("../../../config/context.php");
-        include(FOLDER_VIEW ."/template/head.php");
-        $user = new Usuario;
+        include(FOLDER_VIEW . "/template/head.php");
+        require_once (FOLDER_PROJECT . "/controller/UsuarioController.php");
         ?>
     </head>
 
@@ -17,57 +16,69 @@
 
             <div class="main-panel">
 
-                <?php include(FOLDER_VIEW."/template/navbar.php"); ?>
-                
+                <?php include(FOLDER_VIEW . "/template/navbar.php"); ?>
+
                 <div class="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="card card-plain">
+                                <div class="card">
                                     <div class="card-header" data-background-color="purple">
-                                        <h4 class="title">Lista de Residentes</h4>
-                                        <p class="category">Here is a subtitle for this table</p>
+                                        <h4 class="title">Tabla Usuarios</h4>
+                                        <p class="category">Estos son los usuarios del sistema</p>
                                     </div>
                                     <div class="card-content table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
+                                        <table class="table">
+                                            <thead class="text-primary">
                                             <th>Cedula</th>
-                                            <th>Nombres</th>
-                                            <th>Apellidos</th>
-                                            <th>Correo Electronico</th>
+                                            <th>Nombre</th>
+                                            <th>Apellido</th>
+                                            <th>Correo</th>
                                             <th>Estado</th>
-
+                                            <th></th>
                                             </thead>
                                             <tbody>
-                                                <?php $pdo = new PDO('mysql:host=localhost;dbname=altavista;charset=utf8', 'root', '');
-                                                foreach ($pdo->query("SELECT * FROM usuarios") as $r): ?>
+                                                <?php foreach ($resultado as $r): ?>
                                                     <tr>
-                                                        <td><?php echo $r[0]; ?></td>
-                                                        <td><?php #echo $r->nombre; ?></td>
-                                                        <td><?php #echo $r->apellido; ?></td>
-                                                        <td><?php #echo $r->correo; ?></td>
-                                                        <td><?php #echo $r->estado; ?></td>
-                                                        <td><?php #echo $r->contrasena; ?></td>
+                                                        <td><?php echo $r['cedula']; ?></td>
+                                                        <td><?php echo $r['nombre']; ?></td>
+                                                        <td><?php echo $r['apellido']; ?></td>
+                                                        <td><?php echo $r['correo']; ?></td>
 
-
+                                                        <td class="text-primary"><?php echo $r['estado']; ?></td>
+                                                        <td class="text-primary">
+                                                            <button class="btn btn-primary">
+                                                                <i class="fa fa-pencil"></i>
+                                                            </button>
+                                                            <button class="btn btn-primary">
+                                                                <i class="fa fa-close"></i>
+                                                            </button>
+                                                            <button class="btn btn-primary">
+                                                                <i class="material-icons">local_movies</i>
+                                                            </button>
+                                                            <button class="btn btn-primary">
+                                                                <i class="fa fa-lock"></i>
+                                                            </button>
+                                                        </td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
                                         </table>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <?php include(FOLDER_VIEW."/template/footer.php"); ?>
+
+                <?php include(FOLDER_VIEW . "/template/footer.php"); ?>
 
             </div>
         </div>
 
     </body>
 
-    <?php include(FOLDER_VIEW."/template/scripts.php"); ?>
+    <?php include(FOLDER_VIEW . "/template/scripts.php"); ?>
 
 </html>
