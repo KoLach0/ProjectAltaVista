@@ -5,7 +5,7 @@
         <?php
         include_once ("../../../config/context.php");
         include(FOLDER_VIEW . "/template/head.php");
-        require_once (FOLDER_PROJECT . "/controller/UsuarioController.php");
+        require_once (FOLDER_PROJECT . "/controller/usuarioController.php");
         ?>
     </head>
 
