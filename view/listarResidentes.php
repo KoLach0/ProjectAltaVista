@@ -2,7 +2,8 @@
 <html lang="en">
 
     <head>
-        <?php include("./template/head.php"); ?>
+        <?php   include_once ("../config/context.php");
+        include(FOLDER_VIEW . "/template/head.php");?>
     </head>
 
     <body>

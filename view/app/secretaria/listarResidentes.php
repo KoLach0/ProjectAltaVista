@@ -79,7 +79,6 @@
 
     </body>
 
-    <?php   
-        include(FOLDER_VIEW . "/template/scripts.php");?>
+    <?php include(FOLDER_VIEW . "/template/scripts.php"); ?>
 
 </html>
